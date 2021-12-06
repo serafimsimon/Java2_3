@@ -16,10 +16,10 @@ public class Phonebook {
         ArrayList<String> phones = elements.get(name);
         if (phones != null) {
             phones.add(number);
-        } else
+        } else {
             phones = new ArrayList<>();
         phones.add(number);
-        elements.put(name, phones);
+        elements.put(name, phones);}
     }
 
     public String[] get(String name) {
